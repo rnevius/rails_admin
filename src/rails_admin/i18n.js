@@ -1,4 +1,4 @@
-var I18n = {
+export default {
   locale: null,
   translations: null,
   init(locale, translations) {
@@ -14,5 +14,3 @@ var I18n = {
     return this.translations[key] || humanize;
   },
 };
-
-export { I18n as default };
